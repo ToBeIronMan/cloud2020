@@ -18,7 +18,7 @@ public class PaymentController {
     @Autowired
     private PaymentSerice paymentSerice;
     @PostMapping("/create")
-    public CommonResult create(Payment payment){
+    public CommonResult create(@RequestBody Payment payment){
         int result =paymentSerice.create(payment);
         log.info("******插入结果"+result);
         if(result>0) {
