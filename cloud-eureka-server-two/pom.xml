@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-eureka-server</artifactId>
+    <artifactId>cloud-eureka-server-two</artifactId>
 
     <dependencies>
 
@@ -41,9 +41,6 @@
             <artifactId>spring-boot</artifactId>
 
         </dependency>
-
-
-
 
         <dependency>
 

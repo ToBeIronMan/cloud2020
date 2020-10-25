@@ -2,7 +2,7 @@ server:
   port: 8001
 spring:
   application:
-    name: cloud-provider-payment8001
+    name: CLOUD-PROVIDER-PAYMENT
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver

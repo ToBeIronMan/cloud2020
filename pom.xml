@@ -11,6 +11,11 @@
     <module>cloud-consumer-order80</module>
       <module>cloud-api-commons</module>
       <module>cloud-eureka-server</module>
+      <module>cloud-eureka-server-two</module>
+      <module>cloud-provider-payment8002</module>
+      <module>zookeeper-provider-payment8004</module>
+    <module>zookeeper-consumer-order80</module>
+
   </modules>
   <packaging>pom</packaging>
 
@@ -38,7 +43,16 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
-
+      <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>2.6</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-pool2</artifactId>
+        <version>2.6.0</version>
+      </dependency>
       <!--spring cloud Hoxton.SR1-->
       <dependency>
         <groupId>org.springframework.cloud</groupId>

@@ -1,0 +1,19 @@
+server:
+  port: 8004
+spring:
+  application:
+    name: cloud-provider-payment
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+    zookeeper:
+      discovery:
+        enabled: true
+      connect-string: 192.168.120.131:2181
+
+
+
+
+
+
