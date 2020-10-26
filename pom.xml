@@ -15,6 +15,8 @@
       <module>cloud-provider-payment8002</module>
       <module>zookeeper-provider-payment8004</module>
     <module>zookeeper-consumer-order80</module>
+      <module>consul-provider-payment9004</module>
+    <module>consul-consumer-order90</module>
 
   </modules>
   <packaging>pom</packaging>
