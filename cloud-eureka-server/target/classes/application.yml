@@ -1,0 +1,14 @@
+server:
+  port: 7001
+eureka:
+  instance:
+    hostname: eureka7001.com #eureka服务端实例名称
+  client:
+    register-with-eureka: false #表示不像注册中心注册自己
+    fetch-registry: true #false表示自己就是注册中心，我的职责就是维护服务实例,并不区检索服务
+    #是否从EurekaServer抓取已有的注册信息，默认为true,单节点无所谓,集群必须设置为true才能配合ribbon使用负载均衡
+    service-url:
+      defaultZone: http://eureka7002.com:7002/eureka/
+spring:
+  application:
+    name: cloud-eureka-server

@@ -1,0 +1,15 @@
+server:
+  port: 9004
+spring:
+  application:
+    name: consul-provider-payment
+  devtools:
+    add-properties: false
+  cloud:
+    consul:
+      discovery:
+        service-name: ${spring.application.name}
+        instance-id: ${spring.application.name}:${server.port}
+        include-hostname-in-instance-id: true
+      host: 192.168.120.132
+      port: 8500
