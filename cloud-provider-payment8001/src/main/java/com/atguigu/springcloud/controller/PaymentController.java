@@ -3,7 +3,6 @@ package com.atguigu.springcloud.controller;
 import com.atguigu.springcloud.entities.CommonResult;
 import com.atguigu.springcloud.entities.Payment;
 import com.atguigu.springcloud.service.PaymentSerice;
-import jdk.management.resource.internal.inst.StaticInstrumentation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -17,6 +16,10 @@ import org.springframework.web.bind.annotation.*;
 public class PaymentController {
     @Autowired
     private PaymentSerice paymentSerice;
+    @GetMapping("test")
+    public String doPo(){
+        return "8001";
+    }
     @PostMapping("/create")
     public CommonResult create(@RequestBody Payment payment){
         int result =paymentSerice.create(payment);

@@ -1,0 +1,22 @@
+server:
+  port: 83
+
+spring:
+  application:
+    name: hystrix-order-consumer
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetchRegistry: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka # 单机版
+      #defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka  #集群版
+  instance:
+    instance-id: order80
+    prefer-ip-address: true
+
+payment:
+  #url: http://localhost:8001
+  server:
+    name: http://payment-service

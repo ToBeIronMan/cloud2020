@@ -17,7 +17,9 @@
     <module>zookeeper-consumer-order80</module>
       <module>consul-provider-payment9004</module>
     <module>consul-consumer-order90</module>
-
+      <module>feign-consumer-order81</module>
+    <module>hystrix-provider-payment8005</module>
+    <module>hystrix-consumer-order83</module>
   </modules>
   <packaging>pom</packaging>
 
