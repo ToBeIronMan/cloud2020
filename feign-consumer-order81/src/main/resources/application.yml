@@ -7,8 +7,12 @@ eureka:
     service-url:
       #defaultZone: http://localhost:7001/eureka # 单机版
       defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka  #集群版
-  # 开启feign日志
+# 开启feign日志
 logging:
     level:
       # feign日志以什么级别监控哪个接口
       cn.chen.cloud.service.PaymentService: debug
+#设置连接时间，响应时间
+ribbon:
+  ReadTimeout: 50000
+  ConnectTimeout: 5000

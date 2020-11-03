@@ -19,5 +19,7 @@ public class OrderController {
     public CommonResult getPaymentById(@PathVariable("id") Long id){
         return paymentService.getCommonResultById(id);
     }
+   @GetMapping(value="timeout")
+    public String FeignTimeOut(){ return paymentService.FeignTimeOut();}
 }
 
